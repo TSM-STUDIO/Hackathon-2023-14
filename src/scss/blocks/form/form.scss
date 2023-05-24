@@ -1,0 +1,120 @@
+.form{
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+
+    background-color: white;
+    border-radius: var(--border-radius);
+
+    padding: 24px 27px;
+    width: 400px;
+
+    &__btns{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        gap: 30px;
+    }
+
+    &__title{
+        text-align: center;
+        font-size: 26px;
+    }
+
+    &__invalid{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 14px;
+
+        color: var(--color-red);
+
+        user-select: none;
+
+        height: 0px;
+        opacity: 0;
+
+        transition: var(--transition);
+
+        .form__item--invalid &{
+            height: 25px;
+            opacity: 1;
+        }
+    }
+
+    &__forgot-pass{
+        color: var(--color-gray);
+        font-size: 14px;
+
+        margin-top: 10px;
+
+        transition: var(--transition);
+
+        &:hover, &:focus{
+            color: black;
+        }
+    }
+
+    &__btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        gap: 10px;
+    }
+
+    &__input{
+        margin-bottom: 10px;
+
+    }
+
+    &__item{
+        margin-bottom: 10px;
+    }
+
+    &__inputs{
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    &__obligatory{
+        position: relative;
+
+        width: 100%;
+    }   
+
+    &__asterisk{
+        position: absolute;
+        right: 15px;
+
+        position: absolute;
+        top: calc(50% - 5px);
+        transform: translate(0, -50%);
+    }
+
+    &__items{
+        .form__item:last-child{
+            margin-bottom: 0px;
+        }
+        .form__item:last-child .form__input{
+            margin-bottom: 0px;
+        }
+    }
+
+    &__back{
+        position: absolute;
+        top: 20px;
+        left: 30px;
+
+        & svg path{
+            transition: var(--transition);
+        }
+        &:hover svg path{
+            fill: black;
+        }
+    }
+}

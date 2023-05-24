@@ -1,14 +1,18 @@
+// Fonts
+@import "./../css/fonts/montserrat/montserrat.css";
+
+
 // Bootstrap
 @import "./libs/bootstrap/functions";
 @import "./libs/bootstrap/bootstrap-grid.scss";
 @import "./libs/bootstrap/bootstrap-reboot.scss";
 
-// Owl-carousel
-@import "./../css/libs/owl-carousel/owl.carousel.min.css";
-@import "./../css/libs/owl-carousel/owl.theme.default.min.css";
-
 // Common blocks
 @import "./common-blocks.scss";
+
+// Blocks
+@import "./blocks/form/form.scss";
+@import "./blocks/main/main.scss";
 
 // Vars
 @import "./vars.scss";
