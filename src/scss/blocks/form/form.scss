@@ -39,7 +39,7 @@
 
         transition: var(--transition);
 
-        .form__item--invalid &{
+        .form__item--invalid ~ &{
             height: 25px;
             opacity: 1;
         }
@@ -81,7 +81,7 @@
         gap: 30px;
     }
 
-    &__obligatory{
+    &__item-wrapper{
         position: relative;
 
         width: 100%;
@@ -100,9 +100,7 @@
         .form__item:last-child{
             margin-bottom: 0px;
         }
-        .form__item:last-child .form__input{
-            margin-bottom: 0px;
-        }
+
     }
 
     &__back{
@@ -116,5 +114,40 @@
         &:hover svg path{
             fill: black;
         }
+    }
+
+    &__span{
+        opacity: 0;
+        animation: appear 0.3s forwards;
+    }
+
+    @keyframes appear {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+}
+
+.register, .register-continue{
+    opacity: 0;
+    visibility: hidden;
+
+    transition: var(--transition);
+
+    &--active{
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.auth{
+    opacity: 1;
+
+    transition: var(--transition);
+    &--hidden{
+        opacity: 0;
     }
 }

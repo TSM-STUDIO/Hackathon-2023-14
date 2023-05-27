@@ -63,6 +63,14 @@ body{
     &:focus{
         border-color: #1847ED;
     }
+    &--red{
+        border-color: #f86b6b;
+    }
+    &--red:focus{
+        border-color: #ff0000;
+    }
+
+    
 }
 
 .load-line{
