@@ -1,0 +1,14 @@
+.menu{
+    
+    &__ul{
+        display: none;
+        align-items: center;
+        gap: 20px;
+    }
+
+    @media(min-width: 572px) {
+        &__ul{
+            display: flex;
+        }
+    }
+}

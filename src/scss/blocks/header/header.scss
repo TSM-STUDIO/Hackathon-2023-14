@@ -1,0 +1,32 @@
+.header{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+
+    background-color: white;
+    
+    &__container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+    }
+
+    &__profile{
+        display: flex;
+        flex-direction: column;
+        row-gap: 5px;
+
+        justify-content: center;
+        align-items: center;
+
+        min-width: auto;
+
+        span{
+            font-size: 10px;
+        }
+    }
+}

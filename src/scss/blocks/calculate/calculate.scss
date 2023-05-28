@@ -1,0 +1,20 @@
+.calculate{
+    position: relative;
+    z-index: 2;
+
+    &__items{
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+
+        margin-bottom: 20px;
+    }
+
+    &__title{
+        margin-bottom: 60px;
+    }
+
+    &__container{
+        margin-bottom: 60px;
+    }
+}

@@ -1,0 +1,23 @@
+.how-work{
+
+    &__title{
+        margin-bottom: 10px;
+    }
+    
+    &__paragraph{
+        margin-bottom: 10px;
+    }
+
+    &__ol{
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+        display: flex;
+        flex-direction: column;
+        row-gap: 5px;
+    }
+
+    &__span{
+        font-weight: 700;
+    }
+}

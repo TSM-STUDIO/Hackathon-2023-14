@@ -17,7 +17,7 @@ $(document).ready(function(){
     $.validator.addMethod(
         "spaceFormat",
         function(value, element) {
-            return /^(?<!\s)[a-zA-Zа-яА-Я0-9_@.-]*?(?!\s)$/.test(value);
+            return /^(?<!\s)[a-zA-Zа-яА-Я0-9_@.-]3.*?(?!\s)$/.test(value);
             // ^(?<!\s)[a-zA-Zа-яА-Я0-9_@.-](.*[a-zA-Zа-яА-Я0-9_@.-])*?(?!\s)
         },
         "Неправильный формат"

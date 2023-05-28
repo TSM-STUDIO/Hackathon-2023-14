@@ -1,0 +1,42 @@
+.top{
+    position: relative;
+
+    &__container{
+        display: block;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    &__right{
+        width: 1000px;
+    }
+
+    &__img{
+        position: absolute;
+        top: 300px;
+        right: -30px;
+
+        width: 500px;
+
+        z-index: 1;
+    }
+
+    &__left{
+        position: relative;
+        z-index: 99;
+    }
+
+    &__title{
+        margin-bottom: 15px;
+    }
+
+    @media(min-width:768px) {
+        &__img{
+            top: -100px;
+        }
+        &__container{
+            display: flex;    
+        }
+    }
+}
