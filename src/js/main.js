@@ -17,7 +17,7 @@ $(document).ready(function(){
     $.validator.addMethod(
         "spaceFormat",
         function(value, element) {
-            return /^(?<!\s)[a-zA-Zа-яА-Я0-9_@.-]3.*?(?!\s)$/.test(value);
+            return /^(?<!\s)[a-zA-Zа-яА-Я0-9_@.-]*?(?!\s)$/.test(value);
             // ^(?<!\s)[a-zA-Zа-яА-Я0-9_@.-](.*[a-zA-Zа-яА-Я0-9_@.-])*?(?!\s)
         },
         "Неправильный формат"
@@ -255,6 +255,21 @@ $(document).ready(function(){
     registerBackBtn = document.querySelector("#registerBackBtn");
     registerContinueBtn = document.querySelector('#registerContinueBtn');
     registerContinueBackBtn = document.querySelector('#registerContinueBackBtn');
+
+    forgotPassBtn = document.querySelector('.form__forgot-pass');
+    forgotPassForm = document.querySelector("#forgotPassForm");
+    forgotPassBackBtn = forgotPassForm.querySelector(".form__back")
+
+    // forgot password
+    forgotPassBtn.addEventListener("click", () =>{
+        forgotPassForm.classList.add("forgot-pass--active");
+        authForm.classList.add("auth--hidden");
+    });
+
+    forgotPassBackBtn.addEventListener("click", () =>{
+        forgotPassForm.classList.remove("forgot-pass--active");
+        authForm.classList.remove("auth--hidden");
+    });
 
     registerBtn.addEventListener("click", () =>{
         registerForm.classList.toggle("register--active");

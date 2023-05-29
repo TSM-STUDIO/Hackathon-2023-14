@@ -105,7 +105,7 @@
 
     &__back{
         position: absolute;
-        top: 20px;
+        top: 30px;
         left: 30px;
 
         & svg path{
@@ -131,7 +131,7 @@
       }
 }
 
-.register, .register-continue{
+.register, .register-continue, .forgot-pass{
     opacity: 0;
     visibility: hidden;
 

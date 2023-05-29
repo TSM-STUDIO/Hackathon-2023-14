@@ -21,7 +21,7 @@
         width: 100%;
         min-width: 300px;
         max-height: 348px;
-        display: flex;
+        display: block;
         justify-content: center;
 
         display: none;
@@ -40,7 +40,7 @@
 
     @media(min-width:992px) {
         &__right{
-            display: block;
+            display: flex;
         }
     }
     @media(min-width:572px) {

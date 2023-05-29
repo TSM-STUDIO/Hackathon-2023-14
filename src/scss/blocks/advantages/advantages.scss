@@ -1,10 +1,5 @@
 .advantages{
 
-    &__svg{
-        width: 36px;
-        height: 36px;
-    }
-
     &__items{
         display: flex;
         align-items: center;
@@ -27,6 +22,24 @@
 
         max-width: 350px;
         min-height: 200px;
+
+        & svg path, & svg rect, & svg polygon{
+            transition: var(--transition);            
+        }
+        &:hover svg path, &:hover svg rect, &:hover svg polygon{
+            fill: var(--color-blue);
+        }
+
+        &--stroke{
+
+            & svg path{
+                transition: var(--transition);
+            }
+            &:hover svg path{
+                stroke: var(--color-blue);
+                fill: none;
+            }
+        }
     }
 
     &__desc{

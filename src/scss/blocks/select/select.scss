@@ -1,5 +1,5 @@
 .select{
-
+    width: 100%;
     position: relative;
 
     &:hover &__input{
@@ -33,6 +33,7 @@
 
         background-color: white;
         border-radius: var(--border-radius-sm);
+        border: 1px rgb(205,209,220) solid;
 
         overflow: hidden;
 
@@ -43,6 +44,11 @@
         z-index: 99;
 
         user-select: none;
+
+        &--center{
+            display: flex;
+            justify-content: center;
+        }
     }
 
     &__item{
@@ -67,6 +73,14 @@
         justify-content: center;
 
         transition: var(--transition);
+
+        .select--active &--no-rotate path{
+            stroke: var(--color-blue);
+            transition: var(--transition);
+        }
+        &--no-rotate path{
+            transition: var(--transition);
+        }
     }
 
     &--active &__icon{

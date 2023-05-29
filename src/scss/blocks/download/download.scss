@@ -1,0 +1,44 @@
+.download{
+
+    &__container{
+        display: flex;
+
+        flex-direction: column;
+        align-items: center;
+        row-gap: 10px;
+    }
+
+    &__btn{
+        width: fit-content;
+
+        padding-left: 30px;
+        padding-right: 30px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        span{
+            max-height: 0px;
+            opacity: 0;
+
+            transition: var(--transition);
+
+            a{
+                display: inline;
+
+                color: inherit;
+                font-weight: 700;
+
+                transition: var(--transition);
+            }
+            a:hover{
+                color: rgb(225, 225, 225);
+            }
+        }
+
+        &--active span{
+            opacity: 1;
+        }
+    }
+}

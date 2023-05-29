@@ -17,6 +17,8 @@
         <!-- BLOCKS -->
             <!-- SELECT -->
             <script src="./../../src/js/select/select.js" defer></script>
+            <!-- DOWNLOAD -->
+            <script src="./../../src/js/download/download.js" defer></script>
         <!-- MAIN -->
         <script src="./../../src/js/main.js" defer></script>
 </head>
@@ -58,38 +60,111 @@
 
     <main class="main page__main">
 
-        <section class="pdf main__pdf">
+        <section class="total main__total">
             <div class="container">
-                <button class="btn">Скачать PDF</button>
+                <div class="total__input-data">
+                    <h2 class="total__title h2">
+                        Входные данные:
+                    </h2>
+                    <div class="total__items">
+                        <div class="total__item">
+                            <div class="total__name text--lg">Отрасль ведения хозяйственной деятельности</div>
+                            <div class="total__value">Управление в сфере промышленности</div>
+                        </div>
+                        <div class="total__item">
+                            <div class="total__name text--lg">Штатная численность сотрудников</div>
+                            <div class="total__value">28 человек</div>
+                        </div>
+                        <div class="total__item">
+                            <div class="total__name text--lg">Территория расположения производства</div>
+                            <div class="total__value">Северный автономный округ</div>
+                        </div>
+                        <div class="total__item">
+                            <div class="total__name text--lg">Предполагаемая площадь земельного участка для расположения промышленного производства</div>
+                            <div class="total__value">513 м<sup><small>2</small></div>
+                        </div>
+                        <div class="total__item">
+                            <div class="total__name text--lg">Планируемая площадь объектов капитального строительства</div>
+                            <div class="total__value">32<sup><small>2</small></div>
+                        </div>
+                        <div class="total__item">
+                            <div class="total__name text--lg">Предполагаемое к использованию оборудование</div>
+                            <div class="total__value">Lorem, ipsum.</div>
+                        </div>
+                        <div class="total__item">
+                            <div class="total__name text--lg">Планируемый тип зданий/сооружений и их площади</div>
+                            <div class="total__value">Lorem, ipsum. ipsum</div>
+                        </div>
+                        <div class="total__item">
+                            <div class="total__name text--lg">Предоставление бухгалтерских услуг</div>
+                            <div class="total__value">Да</div>
+                        </div>
+                        <div class="total__item">
+                            <div class="total__name text--lg">Оформление патента</div>
+                            <div class="total__value">Да</div>
+                        </div>
+                        <div class="total__item">
+                            <div class="total__name text--lg">Иные потребности</div>
+                            <div class="total__value">Не выбрано</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="total__output-data">
+                    <h2 class="total__title h2">
+                        Результат:
+                    </h2>
+                    <div class="total__items">
+                        <div class="total__item">
+                            <div class="total__name text--lg">Отрасль ведения хозяйственной деятельности</div>
+                            <div class="total__value">Управление в сфере промышленности</div>
+                        </div>
+                        <div class="total__item">
+                            <div class="total__name text--lg">Штатная численность сотрудников</div>
+                            <div class="total__value">28 человек</div>
+                        </div>
+                        <div class="total__item">
+                            <div class="total__name text--lg">Территория расположения производства</div>
+                            <div class="total__value">Северный автономный округ</div>
+                        </div>
+                        <div class="total__item">
+                            <div class="total__name text--lg">Предполагаемая площадь земельного участка для расположения промышленного производства</div>
+                            <div class="total__value">513 м<sup><small>2</small></div>
+                        </div>
+                        <div class="total__item">
+                            <div class="total__name text--lg">Планируемая площадь объектов капитального строительства</div>
+                            <div class="total__value">32<sup><small>2</small></div>
+                        </div>
+                        <div class="total__item">
+                            <div class="total__name text--lg">Предполагаемое к использованию оборудование</div>
+                            <div class="total__value">Lorem, ipsum.</div>
+                        </div>
+                        <div class="total__item">
+                            <div class="total__name text--lg">Планируемый тип зданий/сооружений и их площади</div>
+                            <div class="total__value">Lorem, ipsum. ipsum</div>
+                        </div>
+                        <div class="total__item">
+                            <div class="total__name text--lg">Предоставление бухгалтерских услуг</div>
+                            <div class="total__value">Да</div>
+                        </div>
+                        <div class="total__item">
+                            <div class="total__name text--lg">Оформление патента</div>
+                            <div class="total__value">Да</div>
+                        </div>
+                        <div class="total__item">
+                            <div class="total__name text--lg">Иные потребности</div>
+                            <div class="total__value">Не выбрано</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section class="how-work">
-            <div class="container">
-                <div class="how-work__text">
-                    <h2 class="h2 how-work__title">Как работает калькулятор</h2>
-                    <div class="how-work__paragraph">
-                        Использовать калькулятор просто — достаточно заполнить все поля соответствующими данными и нажать кнопку «Рассчитать». В результате вы получите график доходности и подробный отчёт за выбранный период.
-                    </div>
-                    
-                    <span class="how-work__span">Какая потребуется информация</span>
-                    <ol class="how-work__ol">
-                    <li class="how-work__li">
-                        <span class="how-work__span">Стартовая сумма</span> — впишите сумму, которую вы готовы инвестировать, выбрав нужную валюту.
-                    </li>
-                    <li class="how-work__li">
-                        <span class="how-work__span">Среднегодовая доходность</span> — укажите процент желаемой доходности за год. Депозиты дают около 3%, ОФЗ — до 7%, инвестиции в акции компаний и ETF могут показать доходность до 12% при умеренном риске.
-                    </li>
-                    <li class="how-work__li">
-                        <span class="how-work__span">Ежемесячное пополнение</span> — введите сумму, которую планируете инвестировать каждый месяц. Если дополнительные средства не будут вноситься, поле заполнять не нужно.
-                    </li>
-                    <li class="how-work__li">
-                        <span class="how-work__span">Срок инвестирования</span> — укажите предполагаемый период. Учитываются ежемесячные пополнения. Чем больше срок инвестирования, тем выше эффект сложного процента.
-                    </li>
-                    </ol>
-
-                    Готово! Осталось нажать кнопку <span class="how-work__span">«Рассчитать»</span>. Калькулятор в виде таблицы покажет результат — сумму, которая будет находиться на счёте в каждый период инвестирования.
-                </div>
+        <section class="download main__download">
+            <div class="container download__container">
+                <button class="btn download__btn shadow">
+                    Скачать отчёт в PDF
+                    <span>Для скачивания <a href="#">Войдите</a> или <a href="#">Зарегистрируйтесь  </a></span>
+                </button>
             </div>
         </section>
     </main>

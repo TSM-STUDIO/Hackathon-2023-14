@@ -22,7 +22,7 @@
 <body class="page">
 
     <main class="main">
-        <form id="authForm" class="form box-shadow main__form" method="POST">
+        <form id="authForm" class="form shadow main__form" method="POST">
             <div class="form__title">
                 Вход
             </div>
@@ -48,19 +48,48 @@
                 </div>
             </div>
             <div class="form__btns">
-                <button type="submit" class="btn form__btn btn--theme-purple">
+                <button type="submit" class="btn shadow form__btn btn--theme-purple">
                     Вход 
                     <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M0.827391 0.851805C1.15283 0.526368 1.68047 0.526368 2.0059 0.851805L6.58923 5.43514C6.91467 5.76057 6.91467 6.28821 6.58923 6.61365L2.0059 11.197C1.68047 11.5224 1.15283 11.5224 0.827391 11.197C0.501954 10.8715 0.501954 10.3439 0.827391 10.0185L4.82147 6.02439L0.827391 2.03032C0.501954 1.70488 0.501954 1.17724 0.827391 0.851805Z" fill="white"/>
                     </svg>                        
                 </button>
-                <button type="button" id="registerBtn" class="btn">
+                <button type="button" id="registerBtn" class="btn shadow">
                     Регистрация                        
                 </button>
             </div>
         </form>
+        <form id="forgotPassForm" class="form shadow main__form forgot-pass" method="POST">
+            <div class="form__title">
+                Забыли пароль?
+            </div>
+            <div class="form__items">
+                <!-- input and invalid -->
+                <div class="form__item">
+                    <input type="text"  data-rule-standartEu="true" class="input form__input" placeholder="Почта" name="email"  data-rule-standartEu="true">
+                    <div id="authFormInvalid" class="form__invalid">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.33331 7.69106L6.33331 5.02439C6.33331 4.6562 6.63179 4.35773 6.99998 4.35773C7.36817 4.35773 7.66664 4.6562 7.66664 5.02439L7.66665 7.69106C7.66665 8.05925 7.36817 8.35773 6.99998 8.35773C6.63179 8.35773 6.33331 8.05925 6.33331 7.69106Z" fill="#D2092D"/>
+                            <path d="M6.99998 11.0244C7.36817 11.0244 7.66665 10.7259 7.66665 10.3577C7.66665 9.98954 7.36817 9.69106 6.99998 9.69106C6.63179 9.69106 6.33331 9.98954 6.33331 10.3577C6.33331 10.7259 6.63179 11.0244 6.99998 11.0244Z" fill="#D2092D"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.99998 0.357727C7.50501 0.357727 7.96669 0.643064 8.19255 1.09478L13.5259 11.7614C13.7325 12.1748 13.7105 12.6656 13.4675 13.0587C13.2246 13.4518 12.7954 13.6911 12.3333 13.6911H1.66665C1.20454 13.6911 0.775389 13.4518 0.532447 13.0587C0.289505 12.6656 0.267419 12.1748 0.474078 11.7614L5.80741 1.09478C6.03327 0.643064 6.49495 0.357727 6.99998 0.357727ZM1.66665 12.3577H12.3333L6.99998 1.69106L1.66665 12.3577Z" fill="#D2092D"/>
+                        </svg>
+                        Логин или пароль не подходят
+                    </div>
+                </div>
+            </div>
+            <div class="form__btns">
+                <button type="submit" id="registerBtn" class="btn shadow">
+                    Отправить                        
+                </button>
+            </div>
+            <button type="button" class="form__back">
+                <svg width="28" height="20" viewBox="0 0 28 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.64099 19.4345C9.21614 20.0317 10.1486 20.0317 10.7238 19.4345C11.299 18.8372 11.299 17.8688 10.7238 17.2715L4.99455 11.3219L26.6193 11.3219C27.3818 11.3219 28 10.7038 28 9.9412C28 9.17865 27.3818 8.56048 26.6193 8.56048L4.99455 8.56047L10.7238 2.61087C11.299 2.01359 11.299 1.04522 10.7238 0.447945C10.1486 -0.14933 9.21614 -0.14933 8.64099 0.447945L0.54074 8.85974C-0.0344134 9.45701 -0.0344135 10.4254 0.54074 11.0227L8.64099 19.4345Z" fill="#828282"/>
+                </svg>                    
+            </button>
+        </form>
 
-        <form id="registerForm" class="form box-shadow main__form register">
+        <form id="registerForm" class="form shadow main__form register">
             <div class="form__title">
                 Регистрация
             </div>
@@ -212,7 +241,7 @@
                 <!-- job title -->
                 <div class="form__item form__item--invalid">
                     <div class="form__item-wrapper">
-                        <input type="text"  data-rule-spaceFormat="true" class="input form__input" placeholder="Должность" name="jobTitle">
+                        <input type="text"    class="input form__input" placeholder="Должность" name="jobTitle">
                     </div>
                     <div class="form__invalid">
                         <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -236,7 +265,7 @@
             </button>
         </form>
 
-        <form id="registerContinueForm" class="form box-shadow main__form register-continue">
+        <form id="registerContinueForm" class="form shadow main__form register-continue">
             <div class="form__title">
                 Регистрация
             </div>

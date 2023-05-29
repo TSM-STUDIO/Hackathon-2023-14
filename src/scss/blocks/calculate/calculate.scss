@@ -17,4 +17,27 @@
     &__container{
         margin-bottom: 60px;
     }
+
+    &__object{
+
+        transition: var(--transition);
+        &:hover{
+            opacity: 0.5;
+        }
+    }
+
+    &__cart{
+        background-color: white;
+        border-radius: var(--border-radius);
+        padding: 20px;
+
+        width: 400px;
+        height: 100%;
+    }
+
+    &__map{
+        display: flex;
+        gap: 30px;
+        align-items: center;
+    }
 }
